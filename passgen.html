@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Password Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 350px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 0.3rem;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #password {
+            margin-top: 1rem;
+            font-weight: bold;
+            word-break: break-all;
+            user-select: all;
+            padding: 0.5rem;
+            background: #e9ecef;
+            border-radius: 4px;
+            font-size: 1.1rem;
+        }
+        label {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Password Generator</h1>
+        <div>
+            <label for="length">Length:</label>
+            <input type="number" id="length" min="4" max="64" value="12" />
+            <button id="generateBtn">Generate</button>
+        </div>
+        <div id="password" aria-live="polite" tabindex="0"></div>
+    </div>
+    <script src="passgen.js"></script>
+</body>
+</html>
