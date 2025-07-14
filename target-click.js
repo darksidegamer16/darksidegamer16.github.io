@@ -41,6 +41,7 @@ function startGame() {
 backBtn.style.pointerEvents = 'none';  // make link unclickable
 backBtn.style.opacity = '0.5';         // optional: visual cue
 
+
     moveTarget();
 
     gameInterval = setInterval(() => {

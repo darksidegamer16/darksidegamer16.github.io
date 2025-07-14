@@ -1,6 +1,6 @@
 body {
     background-color: #000;
-    color: #00ffff;
+    color: #6d76ca;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin: 0;
@@ -12,29 +12,41 @@ body {
     margin: auto;
 }
 
+#wallpaper-section {
+    background: rgba(40, 40, 40, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 50px 60px; /* more padding */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
 img {
     width: 100%;
     max-height: 500px;
     object-fit: cover;
     margin: 20px 0;
-    border: 3px solid #00ffff;
-    box-shadow: 0 0 15px #ff00ff;
+    border: 3px solid #d8d8d8;
+    box-shadow: 0 0 15px #080808;
 }
 
 #downloadBtn {
     padding: 10px 20px;
-    background: #00ffff;
+    background: #b8bdb7;
     color: #000;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 0 0 10px #ff00ff;
+    box-shadow: 0 0 10px #2e2e2e;
     transition: all 0.2s ease;
 }
 
 #downloadBtn:hover {
-    background: #ffff00;
+    background: #c9bdbd;
     box-shadow: 0 0 20px #00ffff;
 }
 
@@ -46,18 +58,18 @@ img {
 
 #backBtn {
     padding: 10px 20px;
-    background: #00ffff;
+    background: #b8bdb7;
     color: #000;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 0 0 10px #ff00ff;
+    box-shadow: 0 0 10px #2e2e2e;
     transition: all 0.2s ease;
 }
 
 #backBtn:hover {
-    background: #ffff00;
+    background: #c9bdbd;
     box-shadow: 0 0 20px #00ffff;
 }
 

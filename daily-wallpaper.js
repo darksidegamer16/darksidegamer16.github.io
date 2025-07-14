@@ -36,6 +36,8 @@ function drawBackground() {
 
 }
 
+/*download button does not work*/
+
 downloadBtn.addEventListener("click", async () => {
     try {
         const response = await fetch(imageUrl, { mode: 'cors' });
