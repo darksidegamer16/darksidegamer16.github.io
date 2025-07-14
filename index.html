@@ -1,84 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro-Y2K Sytle - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohsin Khatri - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="profile.png" alt="Your Photo" class="profile-pic">
-            <h1 class="animated-name">Mohsin Khatri</h1>
-            <p>Developer</p>
-        </header>
-        
-        <section class="section">
-            <h2>About Me</h2>
-            <p>I’m Mohsin Khatri , A passionate learner navigating 
-                the world of AI and Data Science. With a solid foundation and a 
-                drive to turn ideas into impactful solutions, I’m constantly exploring, 
-                building, and evolving — one project at a time.</p>
-        </section>
-        
-        <section class="section">
-            <h2>Skills</h2>
-            <p><div class="skills-grid">
-                <div class="skill-item">HTML</div>
-                <div class="skill-item">CSS</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">Git</div>
-                <div class="skill-item">Adobe PS</div>
-                <div class="skill-item">3D Modeling</div>
-                <div class="skill-item">Unity</div>
-            </div></p>
-        </section>
-        
-        <section class="section">
-            <h2>WT Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3 style="color: #ffff00; margin-bottom: 10px;">Daily Nasa Wallpaper</h3>
-                    <p>Explore the cosmos every day with stunning images from NASA's Astronomy Picture of the Day (APOD) API. This page automatically fetches and displays the latest space photo, along with its title and explanation — bringing a new slice of the universe to your screen daily</p>
-                    <a href="daily-wallpaper.html" class="project-link">Get your Wallpaper</a>
-                </div>
-                <div class="project-card">
-                    <h3 style="color: #ffff00; margin-bottom: 10px;">🎯 Target Click – Test your speed and precision!</h3>
-                    <p>Click as many targets as you can before time runs out. Each target appears in a random spot — the faster you hit it, the higher your score!
-                    </p>
-                    <p> 🕹️ How to Play: Click “Start” to begin the game</p>
-                    <a href="target-click.html" class="project-link">Ready... aim... CLICK! 💥</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3 style="color: #ffff00; margin-bottom: 10px;">🔐 PassGen – Your Instant Password</h3>
-                    <p>Need a strong, secure password? Just click and boom 💥 — you get a random, uncrackable code ready to use!</p>
-                    <a href="passgen.html" class="project-link">passgen</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3 style="color: #ffff00; margin-bottom: 10px;">🎨 ColorPop – Random Palette Generator!</h3>
-                    <p>Feeling creative? Get a burst of fresh color inspiration with one click! 💡</p>
-                    <p>🌈 How to Use: 1.Click “Generate Colors” </p>
-                    <p>2.See 5 beautiful colors pop up </p>
-                    <p>3.Click any color to copy its HEX code </p>
+  <canvas id="bgCanvas"></canvas>
 
-                    <a href="colorpalette.html" class="project-link">Generate Colors</a>
-                </div>
+  <div class="overlay">
+    <nav class="navbar">
+      <div class="logo">Mohsin khatri's Portfolio Website</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-            </div>
-                
-        </section>
-    </div>
-        
-        <section class="section">
-            <h2>Contact</h2>
-            <p>Email : khatrimohsin72@gmail.com , Phone : 3333 3333 
-                <address>Vadodara, India - 390019</address>
-            </p>
-        </section>
-    </div>
+    <div class="hero">
+  <div class="hero-box">
+    <img src="profile.png" alt="Mohsin Khatri" class="profile-img" />
+    <h1>Mohsin Khatri</h1>
+    <p>Web Developer | Designer | Engineer</p>
+    <a href="projects.html" class="btn">View Projects</a> <!-- ✅ inside hero-box -->
+  </div>
+</div>
+
+
+
+
+  <script src="script.js"></script>
+
+<footer class="contact-bar">
+  📧 mohsin@example.com |
+  <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+  <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+</footer>
+
 </body>
 </html>
+

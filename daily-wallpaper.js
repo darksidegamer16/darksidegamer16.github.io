@@ -2,6 +2,9 @@ const imageEl = document.getElementById("nasaImage");
 const descEl = document.getElementById("description");
 const downloadBtn = document.getElementById("downloadBtn");
 
+const bgImage = new Image();
+bgImage.src = "bg.png"; // ✅ Make sure this matches the actual file name
+
 let imageUrl = "";
 
 async function fetchWallpaper() {
@@ -25,6 +28,12 @@ async function fetchWallpaper() {
         descEl.textContent = "Failed to load NASA image.";
         console.error(err);
     }
+}
+function drawBackground() {
+  ctx.drawImage(bgImage, 0, 0, width, height);
+  ctx.fillStyle = "rgba(0, 0, 0, 0.5)"; // Darken
+  ctx.fillRect(0, 0, width, height);
+
 }
 
 downloadBtn.addEventListener("click", async () => {

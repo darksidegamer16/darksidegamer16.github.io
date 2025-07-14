@@ -4,6 +4,8 @@ const timerDisplay = document.getElementById('timer');
 const startBtn = document.getElementById('start-btn');
 const message = document.getElementById('message');
 const gameContainer = document.querySelector('.game-container');
+const backBtn = document.getElementById('back-btn');
+
 
 let score = 0;
 let time = 30;  // seconds
@@ -35,6 +37,9 @@ function startGame() {
     message.textContent = '';
     target.style.display = 'block';
     startBtn.disabled = true;
+    backBtn.classList.add('disabled');  // add this line
+backBtn.style.pointerEvents = 'none';  // make link unclickable
+backBtn.style.opacity = '0.5';         // optional: visual cue
 
     moveTarget();
 
@@ -58,6 +63,9 @@ function endGame() {
     target.style.display = 'none';
     message.textContent = `Game over! Your score is ${score}.`;
     startBtn.disabled = false;
+    backBtn.classList.remove('disabled');  // remove disabled class
+backBtn.style.pointerEvents = 'auto';  // make link clickable again
+backBtn.style.opacity = '1';           // reset opacity
 }
 
 target.addEventListener('click', () => {
